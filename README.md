@@ -28,6 +28,38 @@ However, it goes more into details, and checks all the following properties of a
 
 ✔️ **Catch-all address.** Is this email address a [catch-all](https://debounce.io/blog/help/what-is-a-catch-all-or-accept-all/) address?
 
+## Output Example
+
+```json
+{
+	"input": "someone@gmail.com",
+	"misc": {
+		"is_disposable": false
+	},
+	"mx": {
+		"records": [
+			"alt3.gmail-smtp-in.l.google.com.",
+			"gmail-smtp-in.l.google.com.",
+			"alt1.gmail-smtp-in.l.google.com.",
+			"alt4.gmail-smtp-in.l.google.com.",
+			"alt2.gmail-smtp-in.l.google.com."
+		]
+	},
+	"smtp": {
+		"has_full_inbox": false,
+		"is_catch_all": false,
+		"is_deliverable": false,
+		"is_disabled": true
+	},
+	"syntax": {
+		"address": "someone@gmail.com",
+		"domain": "gmail.com",
+		"username": "someone",
+		"valid_format": true
+	}
+}
+```
+
 ## Installation
 
 ```bash
