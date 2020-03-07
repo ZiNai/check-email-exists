@@ -1,5 +1,5 @@
 [package]
-name = "email-exists"
+name = "check-email-exists"
 version = "0.1.0"
 authors = ["zinai <313670398L@gmail.com>"]
 license = "MIT"
@@ -9,7 +9,7 @@ edition = "2018"
 
 
 [lib]
-name = "email_exists"
+name = "check_email_exists"
 crate-type = ["cdylib"]
 
 [build-dependencies]
@@ -17,8 +17,7 @@ neon-build = "0.3.3"
 
 [dependencies]
 neon = "0.3.3"
-# neon-serde = "0.2.0"
-# serde_derive = "1.0.80"
+neon-serde = "0.2.0"
 serde = "1.0"
 serde_json = "1.0"
 check-if-email-exists = "0.6.1"
