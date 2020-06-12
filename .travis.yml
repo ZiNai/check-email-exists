@@ -15,7 +15,11 @@ node_js:
   - 10
   - 9
   - 8
-cache: cargo
+
+cache:
+  - npm: true
+  - cargo: true
+
 before_install:
   # Install Rust and Cargo
   - |
