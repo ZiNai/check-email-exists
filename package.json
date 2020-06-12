@@ -23,7 +23,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "neon-cli": "^0.3.3",
+    "neon-cli": "^0.4.0",
     "node-pre-gyp": "github:amilajack/node-pre-gyp",
     "node-pre-gyp-github": "^1.4.3"
   },
@@ -36,6 +36,6 @@
     "pkg_path": "."
   },
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^25.5.4"
   }
 }
