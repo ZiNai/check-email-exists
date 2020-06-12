@@ -34,7 +34,8 @@ before_install:
   # Install NPM packages
   - node -v
   - npm -v
-  - npm install
+  - npm install node-pre-gyp@amilajack/node-pre-gyp#neon-compat --unsafe-perm=true
+  - npm install --unsafe-perm=true
 script:
   - travis_wait 30 npm run test -- --runInBand
   # Publish when using '[publish binary]' keywords
