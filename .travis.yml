@@ -11,7 +11,8 @@ language: node_js
 
 node_js:
   - node
-  - 12
+  - 14
+  - 13
   - 10
   - 9
   - 8
@@ -31,6 +32,10 @@ before_install:
       export PATH="$HOME/.cargo/bin:$PATH" && /
       source "$HOME/.cargo/env"
     fi
+  #rust toolchain
+  - rustup toolchain uninstall stable
+  - rustup toolchain install stable
+  - rustup show
   # Install NPM packages
   - node -v
   - npm -v
